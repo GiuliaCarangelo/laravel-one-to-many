@@ -35,7 +35,10 @@ class ProjectController extends Controller
             'name' => 'required',
         ]);
 
+
+        $user = Auth::user();
         $data = $request->all();
+        $data['user_id'] = $user->id;
         $project = Project::create($data);
     
         return redirect()->route('admin.projects.show', ['project' => $project->id]);

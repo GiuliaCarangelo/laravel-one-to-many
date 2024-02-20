@@ -12,6 +12,7 @@
                     <thead>
                         <tr>
                             <th scope="col"></th>
+                            <th scope="col">User ID</th>
                             <th scope="col">Name</th>
                             <th scope="col">Programming Languages</th>
                             <th scope="col">Repo URL</th>
@@ -22,6 +23,8 @@
                         @foreach ( $projects as $project ) 
                         {{-- $index=> --}}
                         <tr>
+                            <td scope="col">{{ $project->user_id }}</td>
+
                             <td scope="col"> {{ $loop->iteration }} </td>
                             <a href="{{ route('admin.projects.show', $project) }}">
                                 <td scope="col">{{ $project->name }}</td>

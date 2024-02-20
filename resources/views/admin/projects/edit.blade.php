@@ -14,6 +14,14 @@
 
 
                         <div class="mb-3">
+                            <label for="user_id" class="form-label fs-4">User ID</label>
+                            <input type="number" class="form-control" id="userId" name="userId"
+                                aria-describedby="name" value="{{ old('name') }}">
+                            <div id="nameHelp" class="form-text">Type your project name.</div>
+                        </div>
+
+
+                        <div class="mb-3">
                             <label for="name" class="form-label fs-4">Project Name</label>
                             <input type="text" class="form-control" id="name" name="name"
                                 aria-describedby="name" value="{{ old('name', $project->name) }}">

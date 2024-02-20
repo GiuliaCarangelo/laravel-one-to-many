@@ -14,5 +14,11 @@ class Project extends Model
         'programming_languages',
         'repo_url',
         'creation_day',
+        'user_id'
     ];
+
+    public function user(){
+        return $this->belongsTo(User::class);
+    }
 }
+

@@ -6,6 +6,12 @@
 <div class="container pl-0 d-flex flex-wrap flex-col">
     <div class="container">
         <div class="row">
+            <div class="col-10">
+                <h2>
+                    {{ $project->user_id }}
+                </h2>
+            </div>
+
             <div class="col-10 text-uppercase">
                 <h2>
                     {{ $project->name }}
