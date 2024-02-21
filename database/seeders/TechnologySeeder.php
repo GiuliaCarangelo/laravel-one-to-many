@@ -12,6 +12,6 @@ class TechnologySeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        
     }
 }
