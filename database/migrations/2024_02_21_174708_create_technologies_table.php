@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('technologies', function (Blueprint $table) {
             $table->id();
             $table->string('name')->unique();
-            $table->string('color', 10);
+            $table->string('tech_logo', 250);
             $table->timestamps();
         });
     }
